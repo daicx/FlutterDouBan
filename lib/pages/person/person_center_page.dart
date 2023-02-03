@@ -192,10 +192,10 @@ class _UseNetDataWidgetState extends State<UseNetDataWidget> {
                 }
                 showDialog(context: context, builder: (BuildContext context){
                   return AlertDialog(title: Text('提示'),content: Text(tmp),actions: <Widget>[
-                    FlatButton(child: Text('稍后我自己重启'),onPressed: (){
+                    TextButton(child: Text('稍后我自己重启'),onPressed: (){
                       Navigator.of(context).pop();
                     },),
-                    FlatButton(child: Text('现在重启'),onPressed: (){
+                    TextButton(child: Text('现在重启'),onPressed: (){
                       RestartWidget.restartApp(context);
                       Navigator.of(context).pop();
                     },)
